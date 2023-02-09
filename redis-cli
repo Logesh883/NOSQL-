@@ -1,0 +1,40 @@
+127.0.0.1:6379> sadd customer:custid 121 122 123
+(integer) 3
+127.0.0.1:6379> sadd customer:name xyz yyy zzz
+(integer) 3
+127.0.0.1:6379> sadd customer:city erode tirupur kovai
+(integer) 3
+127.0.0.1:6379> sadd customer:state tn tn tn
+(integer) 1
+127.0.0.1:6379> sadd order:orderid 221 222 223
+(integer) 3
+127.0.0.1:6379> sadd order:customerid 121 122 123
+(integer) 3
+127.0.0.1:6379> sadd order:comments good bad excellent
+(integer) 3
+127.0.0.1:6379> sadd order:date 11jan 12feb 11mar
+(integer) 3
+127.0.0.1:6379> sadd orderproducts:orderid 221 222 223
+(integer) 3
+127.0.0.1:6379> sadd orderproducts:productid so11 bp1 sug2
+(integer) 3
+127.0.0.1:6379> sadd orderproducts:quantity 2 3 4
+(integer) 3
+127.0.0.1:6379> sadd orderproducts:comments good bad excellent
+(integer) 3
+127.0.0.1:6379> sadd customerphone:custid 121 122 123
+(integer) 3
+127.0.0.1:6379> sadd customerphone:phoneno 9872135353 9876543210 9807656431
+(integer) 3
+127.0.0.1:6379> sadd customerphone:pincode 638001 650012 638052
+(integer) 3
+127.0.0.1:6379> sadd products:productid so11 bp1 sug2
+(integer) 3
+127.0.0.1:6379> sadd products:productname soap bptablet sugar
+(integer) 3
+127.0.0.1:6379> sadd products:size 100g 10nos 1kg
+(integer) 3
+127.0.0.1:6379> sadd products:units 500 200 300
+(integer) 3
+127.0.0.1:6379> SAVE
+OK
